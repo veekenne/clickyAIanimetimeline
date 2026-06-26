@@ -24,10 +24,12 @@ Every entry is sourced to primary reporting. Click any card to read the full sto
 ```
 ai-anime-timeline/
 ├── index.html          # Page markup
+├── about.html          # About / credits page
 ├── css/
 │   └── styles.css      # All styling (anime-inspired theme)
 ├── js/
-│   └── timeline.js     # Rendering, filtering, modal, scroll-reveal
+│   ├── timeline.js     # Rendering, filtering, modal, scroll-reveal
+│   └── petals.js       # Standalone petal background (about page)
 ├── data/
 │   ├── events.js       # Timeline data (loaded by the page)
 │   └── events.json     # Same data, machine-readable

@@ -112,8 +112,8 @@
   var filterBar = document.getElementById("filters");
   filterBar.addEventListener("click", function (e) {
     var btn = e.target.closest(".chip");
-    if (!btn) return;
-    filterBar.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("is-active"); });
+    if (!btn || !btn.hasAttribute("data-filter")) return; // ignore plain links (e.g. About)
+    filterBar.querySelectorAll(".chip[data-filter]").forEach(function (c) { c.classList.remove("is-active"); });
     btn.classList.add("is-active");
     render(btn.getAttribute("data-filter"));
   });

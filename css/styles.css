@@ -342,6 +342,62 @@ body {
 .modal-sources a:hover { background: rgba(138, 123, 255, 0.2); transform: translateY(-2px); }
 .modal-sources a::after { content: "↗"; font-size: 0.78rem; }
 
+/* ---------- link-style chip (nav links) ---------- */
+.chip--link { text-decoration: none; }
+.chip--link:hover { color: var(--grape); }
+
+/* ---------- about page ---------- */
+.hero--compact { padding-bottom: 0.5rem; }
+.about { max-width: 46rem; margin: 2rem auto 3rem; padding: 0 1.4rem; }
+.about-card {
+  background: var(--card);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--grape);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(1.6rem, 4vw, 2.6rem);
+}
+.about-card h2 {
+  font-size: 1.4rem;
+  margin: 0 0 0.6rem;
+  background: linear-gradient(110deg, var(--sakura-deep), var(--grape));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.about-card p { color: var(--ink-soft); margin: 0 0 1rem; }
+.about-card strong { color: var(--ink); font-weight: 700; }
+.about-divider {
+  height: 2px;
+  margin: 1.8rem 0;
+  background: linear-gradient(90deg, transparent, var(--line), transparent);
+}
+.about-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.9rem 1.4rem;
+  margin: 1.4rem 0 0;
+}
+.about-meta div {
+  background: rgba(138, 123, 255, 0.07);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.75rem 0.95rem;
+}
+.about-meta dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  color: var(--sakura-deep);
+  margin-bottom: 0.15rem;
+}
+.about-meta dd { margin: 0; font-weight: 600; color: var(--ink); font-size: 0.96rem; }
+.about-muted { color: var(--ink-faint); font-size: 0.9rem; }
+.about-back { margin-top: 1.8rem; }
+.about-back .chip { text-decoration: none; }
+
 /* ---------- footer ---------- */
 .site-footer {
   max-width: 48rem;
