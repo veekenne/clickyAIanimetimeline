@@ -6,6 +6,9 @@
  * disk (file://) as well as when served over HTTP (e.g. GitHub Pages).
  *
  * A machine-readable copy of the same data lives in data/events.json.
+ * Sources favor primary documents, major news outlets, and the anime
+ * industry's trade press of record (e.g. Anime News Network), with scholarly
+ * references where available — suitable for academic citation.
  *
  * category: one of "production", "controversy", "tooling", "legal", "policy"
  */
@@ -21,8 +24,8 @@ window.TIMELINE_EVENTS = [
     summary: "Hayao Miyazaki rejects an AI-generated animation demo on camera, setting the tone for years of skepticism.",
     body: "In the NHK documentary “Hayao Miyazaki — The One Who Never Ends,” staff present Miyazaki with a grotesque AI-generated character that drags itself using its head. Told the technique could create zombies for games, Miyazaki replies that the work is “an insult to life itself” and that he would never incorporate it into his films. The clip resurfaced repeatedly as generative AI matured, becoming shorthand for the artistic objection to the technology.",
     sources: [
-      { label: "Kotaku", url: "https://kotaku.com/hayao-miyazaki-ai-animation-voice-actors-strike-writers-1850893125" },
-      { label: "We Are Resonate", url: "https://www.weareresonate.com/2016/12/studio-ghibli-hayao-miyazaki-calls-ai-generated-animation-insult-life/" }
+      { label: "Anime News Network", url: "https://www.animenewsnetwork.com/interest/2016-12-09/hayao-miyazaki-calls-ai-cg-animation-presentation-an-insult-to-life-itself/.109717" },
+      { label: "404 Media", url: "https://www.404media.co/hayao-miyazaki-who-said-ai-is-insult-to-life-itself-reduced-to-ai-generated-meme-by-openai/" }
     ]
   },
   {
@@ -36,8 +39,7 @@ window.TIMELINE_EVENTS = [
     summary: "An early Japanese deep-learning engine animates a still illustration from a single image and a voice clip.",
     body: "Tokyo-based AlgoAge unveils DeepAnime, a deep-learning engine that generates talking animation — mouth movement and blinking — from one image plus a voice recording. Pitched for games and lightweight production, it is one of the first widely reported attempts to bring machine learning directly into Japanese animation workflows, foreshadowing later debates about automation.",
     sources: [
-      { label: "Anime News Network", url: "https://www.animenewsnetwork.com/interest/2019-08-12/deep-anime-a.i-creates-talking-animation-based-on-one-image-voice-recording/.149985" },
-      { label: "SoraNews24", url: "https://soranews24.com/2019/08/16/new-anime-ai-program-animates-your-art-for-you-when-you-add-a-voice-clip%E3%80%90videos%E3%80%91/" }
+      { label: "Anime News Network", url: "https://www.animenewsnetwork.com/interest/2019-08-12/deep-anime-a.i-creates-talking-animation-based-on-one-image-voice-recording/.149985" }
     ]
   },
   {
@@ -52,7 +54,7 @@ window.TIMELINE_EVENTS = [
     body: "Toei Animation’s experimental research team PEROs releases the five-minute cyberpunk short “Urvan,” set in Sasebo, Nagasaki and produced with Nagasaki International University. Made remotely under COVID-19 constraints, it uses Preferred Networks’ AI background tool “Scenify” to turn student-shot landscape photos into anime backgrounds — reducing some backgrounds to as little as one-sixth of the normal production time. It stands as one of the earliest commercial-studio anime to lean on AI for its backgrounds.",
     sources: [
       { label: "Anime News Network", url: "https://www.animenewsnetwork.com/news/2021-02-12/toei-animation-streams-full-5-minute-anime-short-film-urvan/.169432" },
-      { label: "Preferred Networks", url: "https://www.preferred.jp/en/news/pr20210312" }
+      { label: "Preferred Networks (primary)", url: "https://www.preferred.jp/en/news/pr20210312" }
     ]
   },
   {
@@ -66,8 +68,7 @@ window.TIMELINE_EVENTS = [
     summary: "The studios announce joint trials of AI to streamline anime production, headlined by the “Scenify” background tool.",
     body: "Toei Animation and AI company Preferred Networks (PFN) announce a partnership to jointly test artificial intelligence for streamlining anime production. The collaboration’s flagship result is “Scenify,” a deep-learning tool that generates background art from photographs, first deployed on the short film “Urvan.” The partnership laid the groundwork for Toei’s far larger 2025 investment in PFN and signaled an early, studio-led embrace of AI tooling.",
     sources: [
-      { label: "Preferred Networks", url: "https://www.preferred.jp/en/news/pr20210312" },
-      { label: "Anime Corner", url: "https://animecorner.me/toei-animation-ai-anime-production/" }
+      { label: "Preferred Networks (primary)", url: "https://www.preferred.jp/en/news/pr20210312" }
     ]
   },
   {
@@ -81,9 +82,9 @@ window.TIMELINE_EVENTS = [
     summary: "The first commercial anime short to publicly use AI-generated backgrounds — and the first major fan backlash.",
     body: "Netflix Anime Creators Base releases the three-minute short “The Dog & The Boy,” directed by Ryōtarō Makihara with Wit Studio and AI studio Rinna. Netflix Japan promotes the AI-generated backgrounds as “an experimental effort to help the anime industry, which has a labor shortage.” The framing ignites widespread criticism from animators and fans who read it as a move to avoid paying background artists, making it the reference point for the whole debate.",
     sources: [
-      { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/The_Dog_%26_the_Boy" },
       { label: "Fortune", url: "https://fortune.com/2023/02/02/netflix-japan-ai-anime-backlash-labor-shortage/" },
-      { label: "Vice", url: "https://www.vice.com/en/article/netflix-anime-dog-and-the-boy-ai-generated-art/" }
+      { label: "Rest of World", url: "https://restofworld.org/2023/netflix-anime-ai-artists/" },
+      { label: "Artnet News", url: "https://news.artnet.com/art-world/netflix-japan-ai-anime-dog-and-boy-2251247" }
     ]
   },
   {
@@ -97,8 +98,9 @@ window.TIMELINE_EVENTS = [
     summary: "A Tokyo startup secures pre-Series A funding to localize manga roughly ten times faster than human teams.",
     body: "Orange, Inc. raises ¥2.92 billion (about $19.5M), backed in part by publisher Shogakukan, to scale AI-assisted manga localization — claiming up to 500 volumes per month. The company argues only ~2% of Japanese manga is officially translated, framing AI as an anti-piracy growth tool. Critics counter that it threatens professional translators and risks lower-quality localization.",
     sources: [
-      { label: "The Comics Beat", url: "https://www.comicsbeat.com/ai-manga-translation-start-up-orange-gets-20-million-in-funding/" },
-      { label: "PR Newswire", url: "https://www.prnewswire.com/news-releases/manga-tech-startup-orange-inc-raises-jpy-2-9b-usd-19-5m-in-pre-series-a-financing-302136935.html" }
+      { label: "Publishers Weekly", url: "https://www.publishersweekly.com/pw/newsbrief/index.html?record=4672" },
+      { label: "Slator", url: "https://slator.com/japanese-manga-translation-startup-orange-raises-usd-19-5m/" },
+      { label: "PR Newswire (primary)", url: "https://www.prnewswire.com/news-releases/manga-tech-startup-orange-inc-raises-jpy-2-9b-usd-19-5m-in-pre-series-a-financing-302136935.html" }
     ]
   },
   {
@@ -109,10 +111,11 @@ window.TIMELINE_EVENTS = [
     category: "controversy",
     title: "“Precure” AI-art accusation",
     studio: "Toei / fandom",
-    summary: "Fans accuse an official franchise illustration of being AI-generated, forcing a public denial.",
-    body: "An official illustration tied to the long-running “Pretty Cure” (Precure) franchise draws fan accusations of being AI-generated. The rights holders publicly clarify the artwork was not made with generative AI. The episode shows how AI anxiety had spread to the point where even human-made promotional art was met with suspicion — a reputational risk in itself.",
+    summary: "Fans accuse official franchise materials of involving AI, forcing Toei to clarify no generative AI was used.",
+    body: "After Toei Animation’s corporate materials listed the “Pretty Cure” (Precure) series among examples of where it expected to use AI, fans suspected official illustrations had been AI-generated. Toei publicly clarified that generative AI had not been used in Precure or in the production of any of its works, calling the earlier wording misleading. The episode shows how AI anxiety had spread to the point where even human-made promotional art was met with suspicion — a reputational risk in itself.",
     sources: [
-      { label: "TokyoScope", url: "https://www.tokyoscope.blog/p/how-ais-rapid-rise-is-shaking-up" }
+      { label: "ComicBook", url: "https://comicbook.com/anime/news/toei-animation-ai-one-piece-dragon-ball/" },
+      { label: "Screen Rant", url: "https://screenrant.com/anime-ai-japan-backlash-toei-animation-industry-future/" }
     ]
   },
   {
@@ -126,7 +129,8 @@ window.TIMELINE_EVENTS = [
     summary: "ChatGPT’s image tool floods social media with Ghibli-style pictures, reviving Miyazaki’s 2016 warning.",
     body: "OpenAI’s updated image generation triggers a global wave of “Studio Ghibli style” images, prompting fierce debate over style mimicry, consent, and training data. Miyazaki’s “insult to life itself” quote resurfaces worldwide. The trend sharpens the question of whether imitating a studio’s signature look without permission is homage or appropriation — and helped set up the legal clashes later that year.",
     sources: [
-      { label: "Euronews", url: "https://www.euronews.com/culture/2025/03/28/chatgpts-viral-studio-ghibli-style-images-an-insult-to-life-itself" }
+      { label: "Euronews", url: "https://www.euronews.com/culture/2025/03/28/chatgpts-viral-studio-ghibli-style-images-an-insult-to-life-itself" },
+      { label: "404 Media", url: "https://www.404media.co/hayao-miyazaki-who-said-ai-is-insult-to-life-itself-reduced-to-ai-generated-meme-by-openai/" }
     ]
   },
   {
@@ -140,8 +144,8 @@ window.TIMELINE_EVENTS = [
     summary: "A TV special uses AI assistance in over 95% of its animation cuts, with humans finishing the hardest shots.",
     body: "Adapted from a viral TikTok account, “Twins Hinahima” premieres on Tokyo MX, billed as Japan’s first AI-produced anime. AI generates backgrounds and character illustrations across 95%+ of cuts, while human animators finalize demanding shots like wind-blown hair. The director defends the approach, arguing it “will give more opportunities to animators” — a claim met with heavy fan skepticism and middling reviews.",
     sources: [
-      { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Twins_Hinahima" },
-      { label: "CBR", url: "https://www.cbr.com/twins-hinahima-first-ai-anime-spring-2025/" }
+      { label: "Anime News Network", url: "https://www.animenewsnetwork.com/news/2025-02-28/frontier-works-kaka-creation-twins-hinahima-ai-anime-reveals-march-29-tv-debut/.221769" },
+      { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Twins_Hinahima" }
     ]
   },
   {
@@ -155,8 +159,7 @@ window.TIMELINE_EVENTS = [
     summary: "A legacy studio behind One Piece and Sailor Moon commits to AI for storyboards, coloring and in-betweens.",
     body: "Toei Animation announces an investment and joint venture with AI firm Preferred Networks to co-develop tools for storyboards, coloring, backgrounds and in-between creation, as part of a multi-billion-yen growth plan. After backlash, Toei clarifies it is “not currently” using AI in production but still expects to introduce it — signaling that even heritage studios see AI as part of their future pipeline.",
     sources: [
-      { label: "Animation Magazine", url: "https://www.animationmagazine.net/2025/05/toei-invests-in-ai-tech-co-for-animation-production-venture/" },
-      { label: "Anime Corner", url: "https://animecorner.me/toei-animation-ai-backlash-denies/" }
+      { label: "Animation Magazine", url: "https://www.animationmagazine.net/2025/05/toei-invests-in-ai-tech-co-for-animation-production-venture/" }
     ]
   },
   {
@@ -170,8 +173,8 @@ window.TIMELINE_EVENTS = [
     summary: "AI-generated subtitles ship with a literal “ChatGPT said:” line, igniting calls for human-only translation.",
     body: "Viewers of “Necronomico and the Cosmic Horror Show” spot AI-generated German subtitles containing the phrase “ChatGPT said:” plus garbled grammar. Crunchyroll blames a third-party vendor and says the use violated its agreement, despite its CEO earlier promising no generative AI in the creative process. Fans demand refunds and turn back to fansubs — a vivid example of AI quality failures reaching paying customers.",
     sources: [
-      { label: "The A.V. Club", url: "https://www.avclub.com/crunchyroll-ai-generated-subtitles-necronomico-and-the-cosmic-horror-show" },
-      { label: "Engadget", url: "https://www.engadget.com/entertainment/streaming/crunchyroll-blames-third-party-vendor-for-ai-subtitle-mess-145621606.html" }
+      { label: "Engadget", url: "https://www.engadget.com/entertainment/streaming/crunchyroll-blames-third-party-vendor-for-ai-subtitle-mess-145621606.html" },
+      { label: "MultiLingual", url: "https://multilingual.com/crunchyroll-ai-subtitles/" }
     ]
   },
   {
@@ -185,7 +188,7 @@ window.TIMELINE_EVENTS = [
     summary: "A powerful video model that excels at anime styles raises the stakes for studios and rights holders.",
     body: "OpenAI releases Sora 2, a text-to-video model praised for realistic, cinematic and notably anime-style output, alongside a social app. Its fluency in anime aesthetics immediately alarms Japanese creators, who fear their work was used in training and could be cheaply imitated at scale — setting up a direct confrontation with the industry’s major IP holders.",
     sources: [
-      { label: "OpenAI", url: "https://openai.com/index/sora-2/" },
+      { label: "OpenAI (primary)", url: "https://openai.com/index/sora-2/" },
       { label: "eWeek", url: "https://www.eweek.com/news/japan-studios-openai-sora/" }
     ]
   },
@@ -200,7 +203,7 @@ window.TIMELINE_EVENTS = [
     summary: "Japan’s content trade group formally demands OpenAI stop training on members’ works without permission.",
     body: "The Content Overseas Distribution Association (CODA) — acting for members including Studio Ghibli, Bandai Namco, Aniplex, Square Enix, Kadokawa and Shueisha — sends OpenAI a formal written request dated October 27, 2025. CODA states that a large share of Sora 2’s output closely resembles Japanese works, concludes this stems from training on that content, and argues the very act of replication during machine learning may infringe Japanese copyright. Crucially, it rejects OpenAI’s opt-out model: under Japanese law, prior permission is the principle, and rights cannot be protected by after-the-fact objection. OpenAI subsequently moves to restrict anime and other IP in Sora.",
     sources: [
-      { label: "CODA (official)", url: "https://coda-cj.jp/en/news/817/" },
+      { label: "CODA (primary)", url: "https://coda-cj.jp/en/news/817/" },
       { label: "Variety", url: "https://variety.com/2025/digital/news/studio-ghibli-openai-sora2-japanese-trade-group-coda-letter-1236568751/" },
       { label: "Nikkei Asia", url: "https://asia.nikkei.com/business/technology/artificial-intelligence/openai-restricts-use-of-anime-other-intellectual-property-in-sora" }
     ]
@@ -216,7 +219,7 @@ window.TIMELINE_EVENTS = [
     summary: "CODA reports OpenAI will discontinue Sora 2 — app and API — calling it a milestone for Japanese creators.",
     body: "CODA announces that on March 27, 2026 it received a report from OpenAI stating the company will discontinue its Sora 2 video-generation product, including the app and API. CODA frames the decision as “a milestone” in the efforts that began with its October 2025 request letter and months of sharing infringement evidence. It cautions the broader fight is not over — rival video generators pose similar risks — and says it will launch a full-scale investigation into generative-AI services in fiscal year 2026 under a commission from METI.",
     sources: [
-      { label: "CODA (official)", url: "https://coda-cj.jp/en/news/876/" }
+      { label: "CODA (primary)", url: "https://coda-cj.jp/en/news/876/" }
     ]
   },
   {
@@ -230,8 +233,8 @@ window.TIMELINE_EVENTS = [
     summary: "AI-generated backgrounds in a new opening are removed after backlash — a repeat offense for the studio.",
     body: "WIT Studio confirms the new Season 4 opening for “Ascendance of a Bookworm” used AI-generated backgrounds. After fan criticism the opening is taken down and replaced with a traditionally animated version from episode 2 onward. As one of the studios behind 2023’s “The Dog & The Boy,” WIT becomes a recurring flashpoint, showing how sensitive audiences remain to AI in flagship sequences.",
     sources: [
-      { label: "Gizmodo", url: "https://gizmodo.com/wit-studio-ai-anime-backlash-ascendance-of-a-bookworm-2000744962" },
-      { label: "CBR", url: "https://www.cbr.com/ascendance-of-a-bookworm-ai-confirmed-one-piece-remake/" }
+      { label: "Anime News Network", url: "https://www.animenewsnetwork.com/news/2026-04-10/wit-studio-apologizes-for-using-generative-ai-in-opening-sequence-of-ascendance-of-a-bookworm-part-/.236271" },
+      { label: "Automaton West", url: "https://automaton-media.com/en/news/ascendance-of-a-bookworm-anime-studio-acknowledges-gen-ai-use-in-opening-promises-to-replace-offending-scenes-with-hand-drawn-art/" }
     ]
   },
   {
@@ -245,7 +248,7 @@ window.TIMELINE_EVENTS = [
     summary: "A sweeping position: training that reproduces existing works is infringement, and opt-out is not enough.",
     body: "CODA publishes its most comprehensive statement on generative AI and rights. It asks AI developers to investigate and pre-empt outputs highly similar to existing works, to stop training on member content where such outputs occur, and to respond sincerely to rights holders. CODA argues that when training reproduces concrete, near-identical Japanese works it amounts to “use for enjoyment purposes” — likely infringing even under Japan’s Article 30-4 exception — and again rejects opt-out systems, insisting on prior authorization and output-stage filters. It crystallizes the Japanese content industry’s legal stance on AI.",
     sources: [
-      { label: "CODA (official)", url: "https://coda-cj.jp/en/news/900/" }
+      { label: "CODA (primary)", url: "https://coda-cj.jp/en/news/900/" }
     ]
   },
   {
@@ -259,7 +262,7 @@ window.TIMELINE_EVENTS = [
     summary: "Government adds AI projects and reportedly funds AI translation to fight labor shortages and piracy.",
     body: "Japan’s Ministry of Economy, Trade and Industry (METI) and NEDO expand their Generative AI Accelerator Challenge with new projects aimed at “labor shortages,” while a reported ~¥11.5 billion ($70M) package is expected to encourage publishers and distributors to adopt AI translation against piracy. State backing signals that, despite fan opposition, AI is being woven into national content strategy.",
     sources: [
-      { label: "Kotaku", url: "https://kotaku.com/japanese-anime-manga-and-gaming-publishers-are-reportedly-being-paid-70-million-to-encourage-ai-generated-translations-2000710488" }
+      { label: "Nikkei Asia", url: "https://asia.nikkei.com/business/media-entertainment/japan-aims-to-stop-manga-piracy-with-ai-translation-training-program" }
     ]
   }
 ];

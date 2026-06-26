@@ -106,7 +106,7 @@ Events are sorted chronologically automatically. Categories control the accent c
 
 ## Sources
 
-This project summarizes public reporting. Key sources include Anime News Network, Wikipedia, Fortune, Vice, Variety, Nikkei Asia, Engadget, The A.V. Club, Gizmodo, CBR, Animation Magazine, Euronews, Kotaku, and OpenAI's own announcements. Each event card links directly to its sources.
+This project summarizes public reporting and prioritizes citation-grade sources suitable for academic reference: primary documents (CODA, OpenAI, Preferred Networks, and corporate press releases), major news outlets (Fortune, Nikkei Asia, Variety, Euronews, Engadget, Rest of World, Artnet News, 404 Media, Publishers Weekly), and the anime industry's trade press of record (Anime News Network, Animation Magazine), plus localization-industry trades (Slator, MultiLingual). Each event card links directly to its sources so claims can be verified.
 
 ---
 
