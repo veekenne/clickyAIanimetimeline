@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs & dependency dirs (not needed, but safe to ignore)
+node_modules/
+npm-debug.log*
+*.log
