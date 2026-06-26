@@ -408,6 +408,18 @@ body {
   font-size: 0.92rem;
 }
 .site-footer .muted { color: var(--ink-faint); font-size: 0.82rem; margin-top: 0.6rem; }
+.footer-link {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--grape);
+  padding: 0.45rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+.footer-link:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); color: var(--sakura-deep); }
 
 /* ---------- responsive ---------- */
 @media (max-width: 720px) {
