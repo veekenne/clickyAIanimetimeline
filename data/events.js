@@ -41,6 +41,36 @@ window.TIMELINE_EVENTS = [
     ]
   },
   {
+    id: "urvan-2021",
+    date: "2021-02",
+    dateLabel: "Feb 2021",
+    year: 2021,
+    category: "production",
+    title: "Toei’s “Urvan” — AI backgrounds, made remotely",
+    studio: "Toei Animation (PEROs) × Nagasaki Int’l University",
+    summary: "A 5-minute short uses PFN’s “Scenify” AI to generate backgrounds, cutting some shots to a sixth of the usual time.",
+    body: "Toei Animation’s experimental research team PEROs releases the five-minute cyberpunk short “Urvan,” set in Sasebo, Nagasaki and produced with Nagasaki International University. Made remotely under COVID-19 constraints, it uses Preferred Networks’ AI background tool “Scenify” to turn student-shot landscape photos into anime backgrounds — reducing some backgrounds to as little as one-sixth of the normal production time. It stands as one of the earliest commercial-studio anime to lean on AI for its backgrounds.",
+    sources: [
+      { label: "Anime News Network", url: "https://www.animenewsnetwork.com/news/2021-02-12/toei-animation-streams-full-5-minute-anime-short-film-urvan/.169432" },
+      { label: "Preferred Networks", url: "https://www.preferred.jp/en/news/pr20210312" }
+    ]
+  },
+  {
+    id: "toei-pfn-2021",
+    date: "2021-03-12",
+    dateLabel: "Mar 12, 2021",
+    year: 2021,
+    category: "tooling",
+    title: "Toei Animation × PFN test AI for production",
+    studio: "Toei Animation × Preferred Networks",
+    summary: "The studios announce joint trials of AI to streamline anime production, headlined by the “Scenify” background tool.",
+    body: "Toei Animation and AI company Preferred Networks (PFN) announce a partnership to jointly test artificial intelligence for streamlining anime production. The collaboration’s flagship result is “Scenify,” a deep-learning tool that generates background art from photographs, first deployed on the short film “Urvan.” The partnership laid the groundwork for Toei’s far larger 2025 investment in PFN and signaled an early, studio-led embrace of AI tooling.",
+    sources: [
+      { label: "Preferred Networks", url: "https://www.preferred.jp/en/news/pr20210312" },
+      { label: "Anime Corner", url: "https://animecorner.me/toei-animation-ai-anime-production/" }
+    ]
+  },
+  {
     id: "dog-and-the-boy-2023",
     date: "2023-01-31",
     dateLabel: "Jan 31, 2023",
@@ -86,6 +116,20 @@ window.TIMELINE_EVENTS = [
     ]
   },
   {
+    id: "ghibli-trend-2025",
+    date: "2025-03",
+    dateLabel: "Mar 2025",
+    year: 2025,
+    category: "controversy",
+    title: "The viral “Ghibli-style” image trend",
+    studio: "OpenAI / global",
+    summary: "ChatGPT’s image tool floods social media with Ghibli-style pictures, reviving Miyazaki’s 2016 warning.",
+    body: "OpenAI’s updated image generation triggers a global wave of “Studio Ghibli style” images, prompting fierce debate over style mimicry, consent, and training data. Miyazaki’s “insult to life itself” quote resurfaces worldwide. The trend sharpens the question of whether imitating a studio’s signature look without permission is homage or appropriation — and helped set up the legal clashes later that year.",
+    sources: [
+      { label: "Euronews", url: "https://www.euronews.com/culture/2025/03/28/chatgpts-viral-studio-ghibli-style-images-an-insult-to-life-itself" }
+    ]
+  },
+  {
     id: "twins-hinahima-2025",
     date: "2025-03-28",
     dateLabel: "Mar 28, 2025",
@@ -98,20 +142,6 @@ window.TIMELINE_EVENTS = [
     sources: [
       { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Twins_Hinahima" },
       { label: "CBR", url: "https://www.cbr.com/twins-hinahima-first-ai-anime-spring-2025/" }
-    ]
-  },
-  {
-    id: "ghibli-trend-2025",
-    date: "2025-03",
-    dateLabel: "Mar 2025",
-    year: 2025,
-    category: "controversy",
-    title: "The viral “Ghibli-style” image trend",
-    studio: "OpenAI / global",
-    summary: "ChatGPT’s image tool floods social media with Ghibli-style pictures, reviving Miyazaki’s 2016 warning.",
-    body: "OpenAI’s updated image generation triggers a global wave of “Studio Ghibli style” images, prompting fierce debate over style mimicry, consent, and training data. Miyazaki’s “insult to life itself” quote resurfaces worldwide. The trend sharpens the question of whether imitating a studio’s signature look without permission is homage or appropriation — and helped set up the legal clashes later that year.",
-    sources: [
-      { label: "Euronews", url: "https://www.euronews.com/culture/2025/03/28/chatgpts-viral-studio-ghibli-style-images-an-insult-to-life-itself" }
     ]
   },
   {
@@ -161,17 +191,32 @@ window.TIMELINE_EVENTS = [
   },
   {
     id: "coda-openai-2025",
-    date: "2025-10",
-    dateLabel: "Oct 2025",
+    date: "2025-10-27",
+    dateLabel: "Oct 27, 2025",
     year: 2025,
     category: "legal",
-    title: "Japan’s studios confront OpenAI over Sora 2",
+    title: "CODA’s written request to OpenAI over Sora 2",
     studio: "CODA (Ghibli, Bandai Namco, Square Enix…)",
-    summary: "An industry trade group demands OpenAI stop training on Japanese works; OpenAI moves to restrict anime IP.",
-    body: "The Content Overseas Distribution Association (CODA) — acting for Studio Ghibli, Bandai Namco, Aniplex, Square Enix, Kadokawa and Shueisha — sends OpenAI a formal request to stop using their works to train Sora 2, arguing that even copying during machine learning may infringe Japanese copyright. OpenAI subsequently moves to restrict anime and other IP in Sora. It marks the most organized legal pushback yet from Japan’s content industry.",
+    summary: "Japan’s content trade group formally demands OpenAI stop training on members’ works without permission.",
+    body: "The Content Overseas Distribution Association (CODA) — acting for members including Studio Ghibli, Bandai Namco, Aniplex, Square Enix, Kadokawa and Shueisha — sends OpenAI a formal written request dated October 27, 2025. CODA states that a large share of Sora 2’s output closely resembles Japanese works, concludes this stems from training on that content, and argues the very act of replication during machine learning may infringe Japanese copyright. Crucially, it rejects OpenAI’s opt-out model: under Japanese law, prior permission is the principle, and rights cannot be protected by after-the-fact objection. OpenAI subsequently moves to restrict anime and other IP in Sora.",
     sources: [
+      { label: "CODA (official)", url: "https://coda-cj.jp/en/news/817/" },
       { label: "Variety", url: "https://variety.com/2025/digital/news/studio-ghibli-openai-sora2-japanese-trade-group-coda-letter-1236568751/" },
       { label: "Nikkei Asia", url: "https://asia.nikkei.com/business/technology/artificial-intelligence/openai-restricts-use-of-anime-other-intellectual-property-in-sora" }
+    ]
+  },
+  {
+    id: "coda-sora-termination-2026",
+    date: "2026-04-01",
+    dateLabel: "Apr 1, 2026",
+    year: 2026,
+    category: "legal",
+    title: "OpenAI tells CODA it will end Sora 2",
+    studio: "CODA × OpenAI",
+    summary: "CODA reports OpenAI will discontinue Sora 2 — app and API — calling it a milestone for Japanese creators.",
+    body: "CODA announces that on March 27, 2026 it received a report from OpenAI stating the company will discontinue its Sora 2 video-generation product, including the app and API. CODA frames the decision as “a milestone” in the efforts that began with its October 2025 request letter and months of sharing infringement evidence. It cautions the broader fight is not over — rival video generators pose similar risks — and says it will launch a full-scale investigation into generative-AI services in fiscal year 2026 under a commission from METI.",
+    sources: [
+      { label: "CODA (official)", url: "https://coda-cj.jp/en/news/876/" }
     ]
   },
   {
@@ -187,6 +232,20 @@ window.TIMELINE_EVENTS = [
     sources: [
       { label: "Gizmodo", url: "https://gizmodo.com/wit-studio-ai-anime-backlash-ascendance-of-a-bookworm-2000744962" },
       { label: "CBR", url: "https://www.cbr.com/ascendance-of-a-bookworm-ai-confirmed-one-piece-remake/" }
+    ]
+  },
+  {
+    id: "coda-genai-statement-2026",
+    date: "2026-05-27",
+    dateLabel: "May 27, 2026",
+    year: 2026,
+    category: "legal",
+    title: "CODA’s landmark statement on AI & copyright",
+    studio: "CODA",
+    summary: "A sweeping position: training that reproduces existing works is infringement, and opt-out is not enough.",
+    body: "CODA publishes its most comprehensive statement on generative AI and rights. It asks AI developers to investigate and pre-empt outputs highly similar to existing works, to stop training on member content where such outputs occur, and to respond sincerely to rights holders. CODA argues that when training reproduces concrete, near-identical Japanese works it amounts to “use for enjoyment purposes” — likely infringing even under Japan’s Article 30-4 exception — and again rejects opt-out systems, insisting on prior authorization and output-stage filters. It crystallizes the Japanese content industry’s legal stance on AI.",
+    sources: [
+      { label: "CODA (official)", url: "https://coda-cj.jp/en/news/900/" }
     ]
   },
   {
